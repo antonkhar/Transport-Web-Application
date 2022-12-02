@@ -1,22 +1,31 @@
-<form action="action_page.php">
+<div id="my-div">
+  <form action="action_page.php">
     <div class="container">
-      <h1>Вход</h1>
-      <p>Пожалуйста, введите Email и пароль</p>
-      <hr>
+      <div class="hd">
+        <img class="icon" src="../../../assets/img/icon.jpg" alt="icon">
+        <div class="txt">
+          <h1>TOK delivery</h1>
+        </div>
+      </div>
+      <div>
   
-      <label for="email"><b>Email</b></label>
       <input type="text" placeholder="Введите Email" name="email" required>
   
-      <label for="psw"><b>Пароль</b></label>
       <input type="password" placeholder="Введите пароль" name="psw" required>
+      
+      </div>
 
-      <hr>
+      <div class = "registerbtn disable" routerLink="/map"><p class="buttontext">Войти</p></div>
 
-      <div class = "registerbtn disable" routerLink="/map">TOP</div>
+      <div class="desk">
+        <p>Забыли пароль? <a routerLink="">Востановить</a>.</p>
+      </div>
 
+      <div class = "registerbtn" routerLink="/map"><p class="buttontext">Регистрация</p></div>
+      <div class="desk">
+        <p>Входя в систему, вы принимаете <a routerLink="">пользовательское соглашение </a>и <a routerLink="">положение о конфиденциальности</a>.</p>
+      </div>
     </div>
-  
-    <div class="container signin">
-      <p>У вас нет аккаунта? <a routerLink="">Зарегистрироваться</a>.</p>
-    </div>
+
 </form>
+</div>

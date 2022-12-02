@@ -1,27 +1,40 @@
 * {box-sizing: border-box}
 
+#my-div{
+  //For center align
+  margin: 0 auto;
+  // For grow & shrink as per screen size change values as per your requirements
+  width: 80%;
+  height: 50%;
+}
+
 /* Add padding to containers */
 .container {
+  background-color: #ffffff;
+  text-align: center;
   padding: 16px;
-  width: 1000px;
-  height: 500px;
+  width: 537px;
+  height: 621px;
   margin: 0 auto;
   margin-top: 100px;
-  background-color: #C9D75B;
-  border: 2px solid #C9D75B;
-  border-radius: 15px;
-  -moz-border-radius: 15px;
+  border: 2px solid #ffffff;
+  border-radius: 25px;
+  -moz-border-radius: 25px;
 //   background-color: #fffb00;
 }
 
 /* Full-width input fields */
 input[type=text], input[type=password] {
-  width: 100%;
+  width: 409px;
+  height: 64px;
   padding: 15px;
   margin: 5px 0 22px 0;
   display: inline-block;
-  border: none;
-  background: #f1f1f1;
+  background: #ffffff;
+  border: 2px solid rgb(203,213,225);
+  border-radius: 15px;
+  -moz-border-radius: 15px;
+  color: rgb(107,114,128);
 }
 
 input[type=text]:focus, input[type=password]:focus {
@@ -31,20 +44,25 @@ input[type=text]:focus, input[type=password]:focus {
 
 /* Overwrite default styles of hr */
 hr {
-  border: 1px solid #f1f1f1;
-  margin-bottom: 25px;
+  // border: 1px solid #f1f1f1;
+  // margin-bottom: 25px;
 }
 
 /* Set a style for the submit/register button */
 .registerbtn {
-  background-color: #a88bc2;
+  background-color: rgb(116,227,1);
   color: white;
-  padding: 16px 20px;
-  margin: 8px 0;
+  // padding: 16px;
   border: none;
   cursor: pointer;
-  width: 100%;
+  width: 409px;
+  height: 64px;
   opacity: 0.9;
+  text-align: center;
+  margin: 0 auto;
+  border: 2px solid rgb(116,227,1);
+  border-radius: 15px;
+  -moz-border-radius: 15px;
   text-align: center;
 }
 
@@ -70,6 +88,41 @@ a {
 }
 
 .disable{
-    background-color: #323843;
+    background-color: rgb(241,245,249);
+    color: rgb(209,213,219);
+    border-color: rgb(241,245,249);
     pointer-events: none;
+}
+
+.desk{
+  width: 409px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.buttontext{
+  padding-top: 19px;
+  margin: 0 auto;
+}
+
+.hd{
+  display:inline-block;
+  width: 100%;
+  padding-left: 46px;
+}
+
+h1{
+  color: rgb(116,227,1);
+  text-align: left;
+  text-shadow: 1px 1px 3px rgb(33,160,56);
+  padding-left: 46px;
+  padding-top: 16px;
+}
+
+.icon{
+  float: left;
+  // width: 33%;
+  padding-top: 35px;
 }

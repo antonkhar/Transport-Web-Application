@@ -39,9 +39,6 @@ export class FormComponent implements OnInit {
         }
         });
 
-    // button!.addEventListener('click', function(event){
-    //   disable(button,a);
-    // });
   }
 
 }
