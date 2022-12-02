@@ -1,0 +1,44 @@
+<div *ngFor="let car of cars" class="box">
+    <div class='car' [ngStyle]="{left: car.positionX + 'px', top: car.positionY + 'px'}" (click)="toogle(car.id)">
+        <div class = "main">
+            <div class="text">
+                <p>id: {{car.id}}</p>
+            </div>
+            <div class="circle">
+                <img class="img" src="assets/img/tok.png" alt="Error tok">
+                <div class="collaider"></div>
+            </div>
+        </div>
+        <div class="info" *ngIf="id == car.id && inf == true">
+            <!-- [ngStyle]="{'display': display, 'visibility' : visibility}" -->
+            <div class="power">
+                <p>power: {{car.id}}</p>
+            </div>
+            <div class="block">
+                <div class="flag work">
+    
+                </div>
+                <div class="text">
+                    <p>{{car.setting.isNotBlocked}}</p>
+                </div>
+            </div>
+            <div class="block">
+                <div class="flag work">
+    
+                </div>
+                <div class="text">
+                    <p>{{car.setting.isNotBusy}}</p>
+                </div>
+            </div>
+            <div class="block">
+                <div class="flag work">
+    
+                </div>
+                <div class="text">
+                    <p>{{car.setting.isNotBroken}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> 
+

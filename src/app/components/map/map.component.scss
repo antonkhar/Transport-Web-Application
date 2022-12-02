@@ -1,0 +1,26 @@
+svg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.map{
+    position: relative;
+    text-align: center;
+    width: 1858px;
+    height: 803px;
+}
+
+.road{
+    opacity: 0;
+}
+
+.car_map{
+    position: absolute;
+    transition: all 1s ease-in-out;
+    -webkit-transition: all 1s ease-in-out; /** Chrome & Safari **/
+    -moz-transition: all 1s ease-in-out; /** Firefox **/
+    -o-transition: all 1s ease-in-out; /** Opera **/
+}
